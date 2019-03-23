@@ -6,9 +6,9 @@ if(!defined("IN_MYBB"))
 }
 
 if(function_exists("myplugins_info"))
-	define(MODULE, "myplugins-announcement");
+	define("MODULE", "myplugins-announcement");
 else
-	define(MODULE, "config-announcement");
+	define("MODULE", "config-announcement");
 
 $page->add_breadcrumb_item($lang->announcement, "index.php?module=".MODULE);
 
